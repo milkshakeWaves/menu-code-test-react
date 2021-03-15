@@ -47,8 +47,6 @@ export const MainPage: React.FC = ({}) => {
         }
     };
 
-    console.log('rendering')
-
     return (
         <Box>
             <Center mt={8}>
