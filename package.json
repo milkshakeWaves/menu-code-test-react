@@ -6,7 +6,7 @@
     "scripts": {
         "start": "webpack-dev-server --mode development --open",
         "test": "npm run test-ts && npm run test-tsx",
-        "test-ts": "env TS_NODE_COMPILER_OPTIONS='{\"module\": \"commonjs\" }' mocha -r ts-node/register 'test/**/*.ts'",
+        "test-ts": "mocha -r ts-node/register 'test/**/*.ts'",
         "test-tsx": "mocha -r ts-node/register -r jsdom-global/register 'test/**/*.tsx' --recursive --timeout 5000"
     },
     "author": "",
