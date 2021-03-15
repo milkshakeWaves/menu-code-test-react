@@ -4,7 +4,7 @@ import { expect } from "chai";
 import Adapter from "enzyme-adapter-react-16";
 import { Center, MenuButton, MenuList } from "@chakra-ui/react";
 import { DinerOrder } from "../../src/component/DinerOrder";
-import { Dish } from "../../src/provider/MenuProvider";
+import { Dish } from "../../src/models/Dish";
 import { ListItem } from "../../src/container/ListItem";
 import sinon from "sinon";
 

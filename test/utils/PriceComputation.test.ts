@@ -1,7 +1,7 @@
 import { describe } from "mocha";
 import { expect } from "chai";
 import { computeCombinedOrderPrice } from "../../src/utils/PriceComputation";
-import { Order } from "../../src/component/MainPage";
+import { Order } from "../../src/models/Order";
 
 describe("PriceComputationTest", () => {
     it("return 0 if the orders are empty", () => {

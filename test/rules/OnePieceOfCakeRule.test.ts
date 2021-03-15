@@ -1,7 +1,7 @@
 import { describe, before } from "mocha";
 import { expect } from "chai";
 import OnePieceOfCakeLeftRule from "../../src/rules/OnePieceOfCakeLeftRule";
-import { Order } from "../../src/component/MainPage";
+import { Order } from "../../src/models/Order";
 import { Rule } from "../../src/rules/Rule";
 
 describe("OnePieceOfCakeLeftTest", () => {

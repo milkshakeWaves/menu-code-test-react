@@ -1,7 +1,7 @@
 import { describe } from "mocha";
 import { expect } from "chai";
 import RuleExecutor from "../../src/rules/RuleExecutor";
-import { Order } from "../../src/component/MainPage";
+import { Order } from "../../src/models/Order";
 
 describe("RuleExecutorTest", () => {
     it("returns one ruleResult per rule when its apply method is called", () => {
