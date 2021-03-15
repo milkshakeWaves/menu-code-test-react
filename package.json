@@ -1,0 +1,51 @@
+{
+    "name": "ot-menu-test",
+    "version": "1.0.0",
+    "description": "A small scaffold application for building ot-menu",
+    "main": "index.js",
+    "scripts": {
+        "start": "webpack-dev-server --mode development --open",
+        "test": "npm run test-ts && npm run test-tsx",
+        "test-ts": "env TS_NODE_COMPILER_OPTIONS='{\"module\": \"commonjs\" }' mocha -r ts-node/register 'test/**/*.ts'",
+        "test-tsx": "mocha -r ts-node/register -r jsdom-global/register 'test/**/*.tsx' --recursive --timeout 5000"
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "@chakra-ui/react": "^1.3.4",
+        "@emotion/react": "^11.1.5",
+        "@emotion/styled": "^11.1.5",
+        "enzyme": "^3.11.0",
+        "enzyme-adapter-react-16": "^1.15.6",
+        "framer-motion": "^3.10.3",
+        "jsdom": "^16.5.1",
+        "jsdom-global": "^3.0.2",
+        "react": "^16.5.2",
+        "react-dom": "^16.5.2"
+    },
+    "devDependencies": {
+        "@babel/cli": "^7.1.0",
+        "@babel/core": "^7.1.0",
+        "@babel/preset-env": "^7.1.0",
+        "@babel/preset-react": "^7.0.0",
+        "@types/chai": "^4.2.15",
+        "@types/enzyme": "^3.10.8",
+        "@types/enzyme-adapter-react-16": "^1.0.6",
+        "@types/jsdom": "^16.2.7",
+        "@types/mocha": "^8.2.1",
+        "@types/react": "^17.0.3",
+        "@types/react-dom": "^17.0.2",
+        "@types/sinon": "^9.0.11",
+        "babel-loader": "^8.0.2",
+        "chai": "^4.3.4",
+        "html-webpack-plugin": "^3.2.0",
+        "mocha": "^8.3.2",
+        "sinon": "^9.2.4",
+        "ts-loader": "^8.0.18",
+        "ts-node": "^9.1.1",
+        "typescript": "^4.2.3",
+        "webpack": "^4.19.1",
+        "webpack-cli": "^3.1.1",
+        "webpack-dev-server": "^3.11.2"
+    }
+}
