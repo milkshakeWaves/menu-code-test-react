@@ -1,45 +1,18 @@
-OpenTable front-end coding challenge
+Menu project
 ====================================
+## Run the project
+- `npm start`
 
-Thank you for accepting our coding challenge. Please take as much time as required to give us a good indication of your coding strengths, as your application will provide many topics of conversation in the next interview stage.
+## Run the tests
+- `npm test` (runs all the tests)
+- `npm run test-ts`(only runs ts tests)
+- `npm run test-tsx` (only runs tsx components tests)
 
-However, in this challenging time, we understand that not everyone has the luxury of sitting down to work on a test uninterrupted. Therefore if you don't manage to implement all of the rules, please describes how you would achieve them or any improvement you would make in the email.
-
-
-## The task
-
-We would like you to build a web application.
-- The application will allow one user to select dishes on behalf of two diners.
-- The application will present a menu that will be provided and may later require adjustment by a restaurant.
-- The application will enforce some restrictions provided by the restaurant. (see [#rules](#rules))
-
-We have prepared a basic application structure for you using React and Webpack. Please add any additional libraries that you think are suitable, for example for CSS and testing.
-
-The menu data is provided in `menu-data.json` and the application is in `src/App.js`.
-
-Please write as clean and maintainable code as possible, and make sure that it's covered by test cases.
-
-
-## Rules
-
-
-_To recap, you will build an interface that allows a user to select dishes for a fixed party of **two diners**._\
-This restaurant unfortunately has a number of rules about the meals that can be ordered.
-
-- Each person must have at least two courses, one of which must be a main.
-- Each diner cannot have more than one of the same course.
-- There is only one piece of cheesecake left.
-- Pierre the snobby waiter will not let you have prawn cocktail and salmon fillet in the same meal.
-
-
-## Acceptance criteria
-
-- The total bill amount is displayed when at least one dish has been selected.
-- An error message is displayed when I try to select an invalid menu combination.
-
-
-## Submission
-
-Please submit your program either by sending a zip file or by providing a link to a repository, dropbox, etc to your point of contact at OpenTable.
-
-
+## Instructions
+- The main page has 2 sections, one per diner, where you can select the dishes by clicking on the category (starters, mains, desserts);
+- Once the dish has been selected, it changes color to green and the total bill is updated (right bottom of the screen);
+- To unselect a dish, just click on it and it turn white, and the tot is updated as well;
+- When the 2 diners want to confirm the meals, just click on the confirm button:
+  - if the order is rule compliant, a message of success is shown;
+  - if at least one rule has been broken, an alert is shown with the first problem to fix;
+- Once the order is correclty placed, the counter is reset.
